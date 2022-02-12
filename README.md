@@ -21,7 +21,7 @@ Let's take an example of Windows, the architecture of Window's 8 was way better 
 
 ## Refrence:
 
-All the points and understanding are taken from the book, Interview of Eric Evans and from the Internet's diffrent websites.
+All the points and understanding are taken from the book, Interview of Eric Evans and from the Internet's different websites.
 
 You can **Download** the PDF of the book below.
 
