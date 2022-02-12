@@ -3,12 +3,13 @@
 In the past there is a very smart person called Eric Evans which basically wrote a book called domain driven design in 2003 and what he did is that he took all the best practices of developing his software and created a book around it and coined some new terms which are very common these days. In today's architecture domain driven design is well respected in architects community so what is it.
 
 ## Definition
-Eric Evans says
-> we are developing a software our focus shouldn't be primarily on technology it should be primarily on business or whatever activity we are trying to assist with the software the domain domain is the business that we are trying to solve or trying to assist with that software now this domain can be any business to mean for example it can be aviation domain it can be railways it can be banking it can be insurance it can be ecommerce or any any sort of domain .
+Eric Evans says:
 
-> specifically we prose that by trying to develop models of that domain and make our software conform to that.
+we are developing a software our focus shouldn't be primarily on technology it should be primarily on business or whatever activity we are trying to assist with the software the domain domain is the business that we are trying to solve or trying to assist with that software now this domain can be any business to mean for example it can be aviation domain it can be railways it can be banking it can be insurance it can be ecommerce or any any sort of domain .
 
-In simple term "domain different design is a way of looking at software from top-down".
+specifically we prose that by trying to develop models of that domain and make our software conform to that.
+
+In simple term "Domain Driven Design is a way of looking at software from top to down".
 
 From a software engineers perspective when you write the code and everything is done when you deploy it to production you either have .exe, .jar or .zip depending on whether you have node, Python, dotnet or Java. After that you  have a bit of abstraction you have objects or methods then abstracting those you have classes and then then you have object-oriented principles which guides you to write classes like interfaces and inheritance that sort of thing then you have even one more layer of abstraction that is design patterns which tell you how to how to design your code using those OPPS principles and your classes then you have modules you basically break down your code into modules and each of those modules will be following some sort of design pattern then you have layers you can you have MVC layers you have services you have controllers you have dow layers things like that and then you have your project so this is a typical **project architecture** and most of the software developers are only familiar or only think about this whole thing as a software.
 
@@ -28,18 +29,20 @@ You can **Download** the PDF of the book below.
 
 [![Tratical Design Tools image](Book-cover.jpg)](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)
 
-> ## The content of the book.
-> 
-> I. Putting the Model to Work.
-> 
-> II. Building Blocks of a Model-Driven Design.
-> 
-> III. Supple	Design.
-> 
-> IV. Context	Mapping for	Strategic Design.
-> 
-> V. Distillation	for	Strategic Design.
-> 
-> VI. Large-scale	Structure for Strategic	Design .
+## The content of the book.
+
+I. Putting the Model to Work.
+
+II. Building Blocks of a Model-Driven Design.
+
+III. Supple	Design.
+ 
+IV. Context	Mapping for	Strategic Design.
+ 
+V. Distillation	for	Strategic Design.
+
+VI. Large-scale	Structure for Strategic	Design .
+
+
 
 The End.
