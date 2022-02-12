@@ -3,15 +3,11 @@
 In the past, there is a very smart person called Eric Evans who basically wrote a book called domain driven design in 2003, and what he did is he took all the best practices of developing his software and created a book around it, and coined some new terms which are very common these days. In today's architecture domain driven design is well respected in architects' communities so what is it.
 
 ## Definition
-Eric Evans says:
 
-we are developing software our focus shouldn't be primarily on technology it should be primarily on business or whatever activity we are trying to assist with the software the domain is the business that we are trying to solve or trying to assist with that software now this domain can be any business to mean for example it can be aviation domain it can be railways it can be banking it can be insurance it can be e-commerce or any sort of domain.
+Eric Evans says: "we are developing software our focus shouldn't be primarily on technology it should be primarily on business or whatever activity we are trying to assist with the software the domain is the business that we are trying to solve or trying to assist with that software now this domain can be any business to mean for example it can be aviation domain it can be railways it can be banking it can be insurance it can be e-commerce or any sort of domain.
+specifically, we prove that by trying to develop models of that domain and make our software conform to that."
 
-specifically, we prove that by trying to develop models of that domain and make our software conform to that.
-
-In simple terms "Domain-Driven-Design is a way of looking at software from top to down".
-
-From a software engineer's perspective when you write the code and everything is done when you deploy it to production you either have .exe, .jar, or .zip depending on whether you have node, Python, dotnet, or Java. After that you have a bit of abstraction you have objects or methods then abstracting those you have classes and then then you have object-oriented principles which guide you to write classes like interfaces and inheritance that sort of thing then you have even one more layer of abstraction that is design patterns which tell you how to how to design your code using those OPPS principles and your classes then you have modules you basically break down your code into modules and each of those modules will be following some sort of design pattern then you have layers you can you have MVC layers you have services you have controllers you have dow layers things like that and then you have your project so this is a typical **project architecture** and most of the software developers are only familiar or only think about this whole thing as software.
+In simple terms "Domain-Driven-Design is a way of looking at software from top to down". From a software engineer's perspective when you write the code and everything is done when you deploy it to production you either have .exe, .jar, or .zip depending on whether you have node, Python, dotnet, or Java. After that you have a bit of abstraction you have objects or methods then abstracting those you have classes and then then you have object-oriented principles which guide you to write classes like interfaces and inheritance that sort of thing then you have even one more layer of abstraction that is design patterns which tell you how to how to design your code using those OPPS principles and your classes then you have modules you basically break down your code into modules and each of those modules will be following some sort of design pattern then you have layers you can you have MVC layers you have services you have controllers you have dow layers things like that and then you have your project so this is a typical **project architecture** and most of the software developers are only familiar or only think about this whole thing as software.
 
 ![Tratical Design Tools image](Image.png)
 
@@ -25,7 +21,7 @@ Let's take an example of Windows, the architecture of Window's 8 was way better 
 
 ## Refrence:
 
-All the points and understanding are taken from the book and from the Internet.
+All the points and understanding are taken from the book, Interview of Eric Evans and from the Internet's diffrent websites.
 
 You can **Download** the PDF of the book below.
 
