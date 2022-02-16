@@ -2,45 +2,119 @@
 ## Introduction
 In the past, there is a very smart person called Eric Evans who basically wrote a book called domain driven design in 2003, and what he did is he took all the best practices of developing his software and created a book around it, and coined some new terms which are very common these days. In today's architecture domain driven design is well respected in architects' communities so what is it.
 
-## Definition
+# Definition
 
 Eric Evans says: "we are developing software our focus shouldn't be primarily on technology it should be primarily on business or whatever activity we are trying to assist with the software the domain is the business that we are trying to solve or trying to assist with that software now this domain can be any business to mean for example it can be aviation domain it can be railways it can be banking it can be insurance it can be e-commerce or any sort of domain.
 specifically, we prove that by trying to develop models of that domain and make our software conform to that."
+In simple terms "Domain-Driven-Design is a way of looking at software from top to down".
 
-In simple terms "Domain-Driven-Design is a way of looking at software from top to down". From a software engineer's perspective when you write the code and everything is done when you deploy it to production you either have .exe, .jar, or .zip depending on whether you have node, Python, dotnet, or Java. After that you have a bit of abstraction you have objects or methods then abstracting those you have classes and then then you have object-oriented principles which guide you to write classes like interfaces and inheritance that sort of thing then you have even one more layer of abstraction that is design patterns which tell you how to how to design your code using those OPPS principles and your classes then you have modules you basically break down your code into modules and each of those modules will be following some sort of design pattern then you have layers you can you have MVC layers you have services you have controllers you have dow layers things like that and then you have your project so this is a typical **project architecture** and most of the software developers are only familiar or only think about this whole thing as software.
+# I. Putting the Model to Work.
+
+Domain-Driven Design is an approach to the development of complex software in which we: 
+
+1. Focus on the core domain. 
+
+2. Explore models in a creative collaboration of domain practitioners and software practitioners. 
+
+3. Speak a ubiquitous language within an explicitly bounded context. 
+
+## Ubiquitous	Language
+For first you write a sentence, 
+
+And then you chop it small; 
+
+Then mix the bits, and sort them out 
+
+Just as they chance to fall: 
+
+The order of the phrases makes 
+
+No difference at all. 
+
+—Lewis Carroll, “Poeta Fit, Non Nascitur” 
+
+## Continuous	Integration
+
+Once a bounded context has been defined, we must keep it sound. When a number of people are working in the same bounded context, there is a strong  tendency for the model to fragment. The bigger the team, the bigger the problem, but as few  as three or four people can encounter serious problems. Yet breaking down the system into  ever-smaller contexts eventually loses a valuable level of integration and coherency.
+
+Therefore: 
+
+Institute a process of merging all code and other implementation artifacts frequently, with  automated tests to flag fragmentation quickly. Relentlessly exercise the ubiquitous  language to hammer out a shared view of the model as the concepts evolve in different  people’s heads. 
+
+ # II. Building Blocks of a Model-Driven Design. 
+
+These patterns cast widely held best practices of object-oriented design in the light of domain-driven design. They guide decisions to clarify the model and to keep the model and implementation aligned with each other, each reinforcing the other’s effectiveness. Careful crafting the details of individual model elements gives developers a steady platform from which to explore models and to keep them in close correspondence with the implementation.  
+
+## Layered Architecture 
+
+In an object-oriented program, UI, database, and other support code often gets written directly into the business objects. Additional business logic is embedded in the behavior of UI widgets and database scripts. This happens because it is the easiest way to make things work, in the short run.
+
+## Entities 
+
+Many objects represent a thread of continuity and identity, going through a lifecycle, though their attributes may change. 
+
+## Value Objects 
+
+Some objects describe or compute some characteristic of a thing. Many objects have no conceptual identity. 
+
+# III. Supple Design. 
+
+To have a project accelerate as development proceeds—rather than get weighed down by its own legacy—demands a design that is a pleasure to work with, inviting to change. A supple design. 
+
+Supple design is the complement to deep modeling. 
+
+Developers play two roles, each of which must be served by the design. The same person might well play both roles—even switch back and forth in minutes—but the relationship to the code is different nonetheless. One role is the developer of a client, who weaves the domain objects into the application code or other domain layer code, utilizing capabilities of the design. A supple design reveals a deep underlying model that makes its potential clear. The client developer can flexibly use a minimal set of loosely coupled concepts to express a range of scenarios in the domain. Design elements fit together in a natural way with a result that is predictable, clearly characterized, and robust. 
+
+Equally important, the design must serve the developer working to change it. To be open to change, a design must be easy to understand, revealing that same underlying model that the client developer is drawing on. It must follow the contours of a deep model of the domain, so most changes bend the design at flexible points. The effects of its code must be transparently obvious, so the consequences of a change will be easy to anticipate. 
+
+* Making behavior obvious 
+
+* Reducing the cost of change 
+
+* Creating software developers to work with 
+
+# IV. Context Mapping for Strategic Design. 
+
+### bounded context  
+
+A description of a boundary (typically a subsystem, or the work of a particular team) within which a particular model is defined and applicable. ### upstream-downstream 
+
+A relationship between two groups in which the “upstream” group’s actions affect project success of the “downstream” group, but the actions of the downstream do not significantly affect projects upstream. (e.g. If two cities are along the same river, the upstream city’s pollution primarily affects the downstream city.) The upstream team may succeed independently of the fate of the downstream team  
+ 
+### mutually dependent 
+
+A situation in which two software development projects in separate contexts must both be delivered in order for either to be considered a success. (When two systems each rely on information or functionality of the other - something we would generally try to avoid  naturally we see the projects that build them as interdependent. Yet there are also mutually dependent projects where system dependencies run only one direction. When the depended-on system has little value without the dependent system and the integration with that system -perhaps because this is the only place it is used - then a failure to deliver the dependent system would be a failure of both projects.  
+
+### free 
+
+A software development context in which the direction, success or failure of development work in other contexts has little effect on delivery. 
+
+# V. Distillation for Strategic Design. 
+
+How do you focus on your central problem and keep from drowning in a sea of side issues? 
+
+Distillation is the process of separating the components of a mixture to extract the essence in a form that makes it more valuable and useful. A model is a distillation of knowledge. With every refactoring to deeper insight, we abstract some crucial aspect of domain knowledge and priorities. Now, stepping back for a strategic view, this chapter looks at ways to distinguish broad swaths of the model and distill the domain model as a whole.  
+
+# VI. Large-scale Structure for Strategic Design. 
+
+In a large system without any overarching principle that allows elements to be interpreted i terms of their role in patterns that span the whole design, developers cannot see the forest for the trees. We need to be able to understand the role of an individual part in the whole without delving into the details of the whole. 
+
+A “large-scale structure” is a language that lets you discuss and understand the system in broad strokes. A set of high-level concepts or rules, or both, establishes a pattern of design for an entire system. This organizing principle can guide design as well as aid understanding. It helps coordinate independent work because there is a shared concept of the big picture: how the roles of various parts shape the whole  
+
+Therefore: 
+
+Devise a pattern of rules or roles and relationships that will span the entire system and that allows some understanding of each part’s place in the whole—even without detailed knowledge of the part’s responsibility.  
+ 
+In simple terms "Domain-Driven-Design is a way of looking at software from top to down".
 
 ![Tratical Design Tools image](Image.png)
 
-Now if this is not a desktop application if it is going to be deployed on web there are percent chances either this is part of a big system or a big infrastructure and it is being used as a service or even if you are selling this product live on internet to customers they are using it as a service so this will be basically more or less a service so what we want is that we want to go up this layer what is above this we want to go up until the top you have many services then all of those services are a part of infrastructure they are trying to solve a bigger problem and that problem is generally a business problem a business domain like we talked about **domain** can be like e-commerce domain or insurance domain banking domain right and all of these services is solving some part of that domain and these are called **subdomains** so now subdomains will be like if your domain is an e-commerce domain and your sub domain will be like product domain or customer domain or shipping domain things like that so now what does domain driven design has to do with all of this so domain driven design is a way to look at things from top down **what do we have on top** we have domain on top domain driven design gives us two kinds of tools one is called **strategic design tools** which helps us to solve all the problems that are related to software modeling the domain this part that you see here this and second kind of tools that **DDD** gives us is tactical design tools that helps us to solve this part of the problem.
-
-Now many of you especially software engineers will be inclined towards tactical design tools but let me tell you these strategic design tools are the most important tools that you can have and if you get a grab on those it will really make you a good software architect or developer or manager. **Anyone who is experienced enough will always give more importance to strategic design tools**.
-Now you'll say why should I learn domain-driven design. The first answer would be straight away to improve your craft as a software developer you want to grow you want to take responsibility you want to design things from scratch basically such that if you design software tomorrow no one should be able to do something like this next is.
-So it's not customers shop to know what they want you should be able to figure out what features or what problems is this customer going to face in future any new feature that you want to give them it should come from your site now this is a good one so your architecture might be fabulous but it's the end-user ultimately who decides whether your system is fabulous or not so you don't want to be doing this tomorrow to your customers and the last one is a system that doesn't solve the business needs is of no use to anyone no matter how **pretty** it looks or how well **architecture and infrastructure** is 
-Let's take an example of Windows, the architecture of Window's 8 was way better than Windows 7 and it looked pretty as well it tried to give us features that we really didn't need, and like this one you don't want your customers to react to your software like that.
-
-
-## Refrence:
+# Refrence:
 
 All the points and understanding are taken from the book, Interview of Eric Evans and from the Internet's different websites.
 
 You can **Download** the PDF of the book below.
 
 [![Tratical Design Tools image](Book-cover.jpg)](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)
-
-## The content of the book.
-
-I. Putting the Model to Work.
-
-II. Building Blocks of a Model-Driven Design.
-
-III. Supple Design.
- 
-IV. Context Mapping for Strategic Design.
- 
-V. Distillation for Strategic Design.
-
-VI. Large-scale Structure for Strategic Design.
-
-
 
 The End.
