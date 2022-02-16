@@ -2,13 +2,13 @@
 ## Introduction
 In the past, there is a very smart person called Eric Evans who basically wrote a book called domain driven design in 2003, and what he did is he took all the best practices of developing his software and created a book around it, and coined some new terms which are very common these days. In today's architecture domain driven design is well respected in architects' communities so what is it.
 
-# Definition
+### Definition
 
 Eric Evans says: "we are developing software our focus shouldn't be primarily on technology it should be primarily on business or whatever activity we are trying to assist with the software the domain is the business that we are trying to solve or trying to assist with that software now this domain can be any business to mean for example it can be aviation domain it can be railways it can be banking it can be insurance it can be e-commerce or any sort of domain.
 specifically, we prove that by trying to develop models of that domain and make our software conform to that."
 In simple terms "Domain-Driven-Design is a way of looking at software from top to down".
 
-# I. Putting the Model to Work.
+## I. Putting the Model to Work.
 
 Domain-Driven Design is an approach to the development of complex software in which we: 
 
@@ -18,7 +18,7 @@ Domain-Driven Design is an approach to the development of complex software in wh
 
 3. Speak a ubiquitous language within an explicitly bounded context. 
 
-## Ubiquitous	Language
+### Ubiquitous	Language
 For first you write a sentence, 
 
 And then you chop it small; 
@@ -33,7 +33,7 @@ No difference at all.
 
 —Lewis Carroll, “Poeta Fit, Non Nascitur” 
 
-## Continuous	Integration
+### Continuous	Integration
 
 Once a bounded context has been defined, we must keep it sound. When a number of people are working in the same bounded context, there is a strong  tendency for the model to fragment. The bigger the team, the bigger the problem, but as few  as three or four people can encounter serious problems. Yet breaking down the system into  ever-smaller contexts eventually loses a valuable level of integration and coherency.
 
@@ -41,23 +41,23 @@ Therefore:
 
 Institute a process of merging all code and other implementation artifacts frequently, with  automated tests to flag fragmentation quickly. Relentlessly exercise the ubiquitous  language to hammer out a shared view of the model as the concepts evolve in different  people’s heads. 
 
- # II. Building Blocks of a Model-Driven Design. 
+## II. Building Blocks of a Model-Driven Design. 
 
 These patterns cast widely held best practices of object-oriented design in the light of domain-driven design. They guide decisions to clarify the model and to keep the model and implementation aligned with each other, each reinforcing the other’s effectiveness. Careful crafting the details of individual model elements gives developers a steady platform from which to explore models and to keep them in close correspondence with the implementation.  
 
-## Layered Architecture 
+### Layered Architecture 
 
 In an object-oriented program, UI, database, and other support code often gets written directly into the business objects. Additional business logic is embedded in the behavior of UI widgets and database scripts. This happens because it is the easiest way to make things work, in the short run.
 
-## Entities 
+### Entities 
 
 Many objects represent a thread of continuity and identity, going through a lifecycle, though their attributes may change. 
 
-## Value Objects 
+### Value Objects 
 
 Some objects describe or compute some characteristic of a thing. Many objects have no conceptual identity. 
 
-# III. Supple Design. 
+## III. Supple Design. 
 
 To have a project accelerate as development proceeds—rather than get weighed down by its own legacy—demands a design that is a pleasure to work with, inviting to change. A supple design. 
 
@@ -73,7 +73,7 @@ Equally important, the design must serve the developer working to change it. To 
 
 * Creating software developers to work with 
 
-# IV. Context Mapping for Strategic Design. 
+## IV. Context Mapping for Strategic Design. 
 
 ### bounded context  
 
@@ -89,13 +89,13 @@ A situation in which two software development projects in separate contexts must
 
 A software development context in which the direction, success or failure of development work in other contexts has little effect on delivery. 
 
-# V. Distillation for Strategic Design. 
+## V. Distillation for Strategic Design. 
 
 How do you focus on your central problem and keep from drowning in a sea of side issues? 
 
 Distillation is the process of separating the components of a mixture to extract the essence in a form that makes it more valuable and useful. A model is a distillation of knowledge. With every refactoring to deeper insight, we abstract some crucial aspect of domain knowledge and priorities. Now, stepping back for a strategic view, this chapter looks at ways to distinguish broad swaths of the model and distill the domain model as a whole.  
 
-# VI. Large-scale Structure for Strategic Design. 
+## VI. Large-scale Structure for Strategic Design. 
 
 In a large system without any overarching principle that allows elements to be interpreted i terms of their role in patterns that span the whole design, developers cannot see the forest for the trees. We need to be able to understand the role of an individual part in the whole without delving into the details of the whole. 
 
@@ -109,7 +109,7 @@ In simple terms "Domain-Driven-Design is a way of looking at software from top t
 
 ![Tratical Design Tools image](Image.png)
 
-# Refrence:
+### Refrence:
 
 All the points and understanding are taken from the book, Interview of Eric Evans and from the Internet's different websites.
 
